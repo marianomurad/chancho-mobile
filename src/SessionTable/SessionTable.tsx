@@ -9,6 +9,7 @@ const SessionTableComponent = () => {
         {
             order: 'A',
             color: '#B54731',
+            estimate: '800',
             compound : {
                 name: 'ARRANQUE',
                 reps: '2',
@@ -19,6 +20,7 @@ const SessionTableComponent = () => {
         {
             order: 'B',
             color: '#BD923E',
+            estimate: '1000',
             compound: {
                 name: 'ENVION',
                 reps: '1+2',
@@ -29,6 +31,7 @@ const SessionTableComponent = () => {
         {
             order: 'C',
             color: 'green',
+            estimate: '800',
             compound: {
                 name: 'TIRON ENV',
                 reps: '3',
@@ -43,7 +46,7 @@ const SessionTableComponent = () => {
                 {
                     exercises.map(
                         exercise => {
-                            return <CardComponent color={exercise.color} order={exercise.order} compound={exercise.compound} key={exercise.order}/>
+                            return <CardComponent color={exercise.color} order={exercise.order} compound={exercise.compound} estimated={exercise.estimate} key={exercise.order}/>
                         })
                 }
             </SectionComponent>

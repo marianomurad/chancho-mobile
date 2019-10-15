@@ -1,13 +1,17 @@
 import React from 'react';
-import {Body, Card, CardItem, H3, Left, Right, Text} from "native-base";
+import { Card, CardItem, H3 } from "native-base";
+import { styles } from './CardTitle.styles'
+import { LinearGradient } from 'expo-linear-gradient'
 
 const CardTitleComponent = () => {
     return (
-        <Card style={{backgroundColor: '#364B5E',marginLeft:5,width:400, borderRadius: 20,borderColor:'black',height:120}}>
-            <CardItem style={{flexDirection: 'column', marginVertical:30,backgroundColor: '#364B5E', borderRadius: 20, justifyContent: 'center'}}>
-                    <H3 style={{color: '#fff'}}>PRIMER TURNO</H3>
-            </CardItem>
-        </Card>
+                <Card style={[styles.cardTitle]}>
+                <LinearGradient colors={[ '#ffcc00', '#FFEB3B']} style={[styles.cardTitle,{borderRadius: 20, height:70}]}>
+                <CardItem style={[styles.cardTitleBody]}>
+                    <H3 style={{color: 'black', marginTop: 10}}>1º Turno</H3>
+                </CardItem>
+                </LinearGradient>
+                </Card>
     );
 };
 

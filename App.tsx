@@ -4,6 +4,7 @@ import SessionTableComponent from "./src/SessionTable/SessionTable";
 import HeaderComponent from "./src/Header/Header";
 import { Font } from 'expo';
 import {styles} from './src/App.styles'
+import FooterComponent from "./src/Footer/Footer";
 
 export default function App() {
     const [areFontsLoaded, setFontsLoaded] = useState(false);
@@ -16,6 +17,7 @@ export default function App() {
                     :
                     <SessionTableComponent/>
               }
+              <FooterComponent/>
           </Container>
 
   );
