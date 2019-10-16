@@ -16,7 +16,7 @@ const CardComponent = ({color, order,estimated, compound}) => {
                     <Left>
                         <View>
                             <View style={{alignSelf: 'center', borderBottomColor:'orange', borderBottomWidth: 1}}>
-                            <Text style={{fontFamily: 'Oxigen-Regular'}}>{compound.percentaje} %</Text>
+                            <Text style={{fontFamily: 'Oxigen-Regular'}}>{compound.percentaje}%</Text>
                             </View>
                             <Text style={{alignSelf: 'center', fontFamily: 'Oxigen-Regular'}}>{compound.reps}</Text>
                         </View>
