@@ -5,6 +5,7 @@ import HeaderComponent from "./src/Header/Header";
 import * as Font from 'expo-font';
 import {styles} from './src/App.styles'
 import FooterComponent from "./src/Footer/Footer";
+import SessionsComponent from "./src/Sessions/Sessions";
 
 export default function App() {
     const [areFontsLoaded, setFontsLoaded] = useState(false);
@@ -25,12 +26,11 @@ export default function App() {
               <HeaderComponent/>
               {
                   areFontsLoaded ?
-                    <SessionTableComponent/>
+                    <SessionsComponent/>
                     :<Spinner color='white' />
               }
               <FooterComponent/>
           </Container>
-
   );
 }
 

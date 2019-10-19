@@ -5,10 +5,10 @@ import CardTitleComponent from "./CardTitle";
 
 
 
-const SectionComponent = ({children}) => {
+const SectionComponent = ({children,sessionTitle}) => {
     return (
-        <Container style={[styles.generalBackgroundColor,{marginVertical:40}]}>
-            <CardTitleComponent/>
+        <Container style={[{backgroundColor: 'transparent',marginVertical:40}]}>
+            <CardTitleComponent title={sessionTitle}/>
             {children}
         </Container>
     );

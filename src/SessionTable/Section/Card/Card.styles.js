@@ -2,10 +2,10 @@ import {StyleSheet} from "react-native";
 
 export const styles = StyleSheet.create({
     cardContainer: {
-        height:120,
-        // width:100,
-        // marginLeft: 5,
-        // marginRight: 5,
+        // height:120,
+            // width:100,
+        marginLeft: 10,
+        marginRight: 10,
         marginTop: 10,
         borderRadius: 30,
         backgroundColor:'grey',
@@ -16,10 +16,10 @@ export const styles = StyleSheet.create({
         shadowOpacity: 0.2,
     },
     cardItemTitle: {
-        width: 320,
+        alignSelf: 'stretch',
         borderBottomEndRadius:20,
         borderTopEndRadius:20,
-        justifyContent: 'center',
+        justifyContent: 'space-between',
         borderBottomColor: 'lightgrey',
         borderBottomWidth: 1,
         },

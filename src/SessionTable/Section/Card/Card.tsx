@@ -1,5 +1,5 @@
 import React from 'react';
-import {Body, Card, CardItem, Left, Right, Text, View} from "native-base";
+import {Body, Button, Card, CardItem, Icon, Left, Right, Text, View} from "native-base";
 import {styles} from './Card.styles'
 
 const CardComponent = ({color, order,estimated, compound}) => {
@@ -11,12 +11,13 @@ const CardComponent = ({color, order,estimated, compound}) => {
             <CardItem style={{flexDirection: 'column',flex: 1, borderBottomEndRadius:20, borderTopEndRadius:20}}>
                 <CardItem header style={styles.cardItemTitle}>
                     <Text style={{fontFamily: 'Oxigen-Bold'}}>{compound.name}</Text>
+                    <Button small transparent><Icon style={{color: 'black' ,fontWeight: 'regular'}} type="FontAwesome5" name="ellipsis-h"/></Button>
                 </CardItem>
-                <CardItem style={{maxHeight:50}}>
+                <CardItem style={{maxHeight:45}}>
                     <Left>
                         <View>
                             <View style={{alignSelf: 'center', borderBottomColor:'orange', borderBottomWidth: 1}}>
-                            <Text style={{fontFamily: 'Oxigen-Regular'}}>{compound.percentaje}%</Text>
+                            <Text style={{fontFamily: 'Oxigen-Regular'}}>{compound.percentage}%</Text>
                             </View>
                             <Text style={{alignSelf: 'center', fontFamily: 'Oxigen-Regular'}}>{compound.reps}</Text>
                         </View>
