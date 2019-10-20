@@ -15,7 +15,10 @@ const SessionsComponent = () => {
     ]; //replace for useGetSessionsForDay ->
     return (
         <Container style={[styles.generalBackgroundColor]}>
-                <Tabs style={{borderTopWidth:0}}>
+                <Tabs
+                      tabBarUnderlineStyle={{backgroundColor: '#fff'}}
+                      tabContainerStyle={{borderWidth: 0}}
+                >
                     {sessions.map(
                         session =>{
                                      return <Tab

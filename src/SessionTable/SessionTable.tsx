@@ -11,7 +11,7 @@ const SessionTableComponent = ({sessionUrl, sessionTitle}) => {
     const exercises = useGetExercises(sessionUrl);
     const backGroundImg = require('../../assets/images/lu.jpg');
     return (
-        <Content>
+        <Content style={[styles.generalBackgroundColor]}>
             <ImageBackground source={backGroundImg} style={{width: '100%', height: '100%'}}>
             <SectionComponent sessionTitle={sessionTitle}>
                 {

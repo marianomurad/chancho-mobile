@@ -15,6 +15,7 @@ export const styles = StyleSheet.create({
         backgroundColor: '#020208'
     },
     layoutBackground: {
-        backgroundColor: '#020208'
+        backgroundColor: '#020208',
+        borderBottomWidth: 0
     }
 });
