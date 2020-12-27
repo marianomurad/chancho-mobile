@@ -1,11 +1,9 @@
-import React, {useState, useEffect} from 'react';
-import {Container, Spinner } from 'native-base';
-import SessionTableComponent from "./src/SessionTable/SessionTable";
-import HeaderComponent from "./src/Header/Header";
+import React, { useState, useEffect } from 'react';
+import { Spinner } from 'native-base';
 import * as Font from 'expo-font';
-import {styles} from './src/App.styles'
-import FooterComponent from "./src/Footer/Footer";
-import SessionsComponent from "./src/Sessions/Sessions";
+
+import Firebase, { FirebaseProvider } from './config/Firebase'
+import LoginView from "./src/Views/Login";
 
 export default function App() {
     const [areFontsLoaded, setFontsLoaded] = useState(false);
@@ -18,19 +16,17 @@ export default function App() {
         });
         setFontsLoaded(true);
     };
-    const useFontLoader = () => {loadFonts();};
+    const useFontLoader = () => { loadFonts(); };
     useEffect(useFontLoader,[]);
 
   return (
-          <Container  style={[styles.generalBackgroundColor]}>
-              <HeaderComponent/>
-              {
-                  areFontsLoaded ?
-                    <SessionsComponent/>
-                    :<Spinner color='white' />
-              }
-              <FooterComponent/>
-          </Container>
+      <FirebaseProvider value={Firebase}>
+          {
+              areFontsLoaded ?
+                  <LoginView/>
+                  :<Spinner color='white' />
+          }
+      </FirebaseProvider>
   );
 }
 

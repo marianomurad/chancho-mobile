@@ -1,6 +1,6 @@
 import React , { useState, useEffect } from 'react';
 import {Container} from "native-base";
-import {styles} from '../../../src/App.styles'
+import {styles} from '../../../App.styles'
 import CardTitleComponent from "./CardTitle";
 
 

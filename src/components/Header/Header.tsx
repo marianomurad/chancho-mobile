@@ -1,6 +1,6 @@
 import React from 'react';
 import {Body, Button, Header, Icon} from "native-base";
-import {styles} from '../../src/App.styles'
+import {styles} from '../../App.styles'
 
 const HeaderComponent = () => {
     return (

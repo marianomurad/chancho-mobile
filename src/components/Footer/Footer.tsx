@@ -1,6 +1,6 @@
 import React from 'react';
 import {Button, Footer, FooterTab, Icon} from "native-base";
-import {styles} from '../../src/App.styles'
+import {styles} from '../../App.styles'
 const FooterComponent = () => {
     return (
         <Footer style={[styles.layoutBackground]}>

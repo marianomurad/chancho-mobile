@@ -116,3 +116,4 @@ ios/Pods/boost-for-react-native/boost/units/base_units/temperature/
 ios/Pods/boost-for-react-native/boost/units/physical_dimensions/
 ios/Pods/boost-for-react-native/boost/utility/
 ios/Pods/boost-for-react-native/boost/variant/
+/.env
